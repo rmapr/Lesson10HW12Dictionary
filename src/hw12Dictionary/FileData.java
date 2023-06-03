@@ -3,9 +3,9 @@ package hw12Dictionary;
 import java.util.Objects;
 
 public class FileData {
-    private String path;
-    private String fileName;
-    private int size;
+    private final String path;
+    private final String fileName;
+    private final int size;
 
     public FileData(String path, String fileName, int size) {
         this.path = path;
@@ -17,24 +17,12 @@ public class FileData {
         return path;
     }
 
-    public void setPath(String path) {
-        this.path = path;
-    }
-
     public String getFileName() {
         return fileName;
     }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
-
     public int getSize() {
         return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
     }
 
     @Override
